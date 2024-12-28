@@ -1,0 +1,54 @@
+
+.close-icon{
+    cursor: pointer;
+    font-size: 24px;
+    float:right;
+    font-weight: bold;
+}
+.model{
+    position: fixed;
+    z-index: 1;
+    padding: 150px;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    background-color: #2bff00;
+}
+.content{
+   position: relative;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 0;
+   border: 1px solid red;
+   width: 80%;
+   animation-name: animationModel;
+   animation-duration: 0.5s;
+}
+.Header{
+    padding: 4px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.body{
+    padding: 2px 15px;
+    height: 200px;
+
+}
+.footer{
+    padding: 2px 15px;
+    background-color:#5cb85c ;
+    color: white;
+    
+}
+@keyframes animationModel{
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
